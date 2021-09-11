@@ -1,0 +1,30 @@
+{
+  "name": "Mini-DeFi",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SashaFlores/Mini-DeFi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SashaFlores/Mini-DeFi/issues"
+  },
+  "homepage": "https://github.com/SashaFlores/Mini-DeFi#readme",
+  "dependencies": {
+    "@openzeppelin/contracts": "^3.1.0",
+    "@truffle/hdwallet-provider": "^1.5.0",
+    "dotenv": "^10.0.0",
+    "web3": "^1.5.2",
+    "yarn": "^1.22.11"
+  }
+}
