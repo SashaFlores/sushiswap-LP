@@ -1,5 +1,5 @@
 {
-  "name": "Mini-DeFi",
+  "name": "sushiswap-LP",
   "version": "1.0.0",
   "description": "",
   "main": "truffle-config.js",
@@ -11,15 +11,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SashaFlores/Mini-DeFi.git"
+    "url": "git+https://github.com/SashaFlores/sushiswap-LP.git"
   },
   "keywords": [],
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/SashaFlores/Mini-DeFi/issues"
+    "url": "https://github.com/SashaFlores/sushiswap-LP/issues"
   },
-  "homepage": "https://github.com/SashaFlores/Mini-DeFi#readme",
+  "homepage": "https://github.com/SashaFlores/sushiswap-LP#readme",
   "dependencies": {
     "@openzeppelin/contracts": "^3.1.0",
     "@truffle/hdwallet-provider": "^1.5.0",

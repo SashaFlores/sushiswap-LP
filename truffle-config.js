@@ -9,6 +9,13 @@ module.exports = {
       port: 8545,
       network_id: "*",
     },
+    ethereum: {
+      provider: () => new HDWalletProvider(privateKeys.split(','), `https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`),
+      network_id: 1,              
+      confirmations: 5,    
+      timeoutBlocks: 200,  
+      skipDryRun: true     
+    },
     ropsten: {
       provider: () => new HDWalletProvider(privateKeys.split(','), `https://ropsten.infura.io/v3/${process.env.INFURA_API_KEY}`),
       network_id: 3,       // Ropsten's id
@@ -17,9 +24,14 @@ module.exports = {
       timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
       skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
+    bsc_mainnet: {
+      provider: () => new HDWalletProvider(privateKeys.split(','),`https://bsc-dataseed1.binance.org`),
+      network_id: 97,
+      skipDryRun: true
+    },
     bsc_testnet: {
       provider: () => new HDWalletProvider(privateKeys.split(','),`https://data-seed-prebsc-1-s1.binance.org:8545`),
-      network_id: 97,
+      network_id: 56,
       skipDryRun: true
     } 
   },
